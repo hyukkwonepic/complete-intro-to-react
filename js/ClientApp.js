@@ -6,7 +6,7 @@ var MyTitle = React.createClass({
   render () {
     return (
       div(null,
-        h1(null, 'Check out this other thing')
+        h1(null, this.props.title)
       )
     )
   }
@@ -17,9 +17,9 @@ var ce = React.createElement
 
 var MyFirstComponent = (
   div(null,
-    MyTitleFact(null),
-    React.createElement(MyTitle, null),
-    ce(MyTitle, null)
+    MyTitleFact({title: 'Props are great'}),
+    React.createElement(MyTitle, {title: 'Use props everywhere!'}),
+    ce(MyTitle, {title: 'Props are the best'})
   )
 )
 
