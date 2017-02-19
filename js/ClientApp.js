@@ -1,8 +1,10 @@
+/* global React ReactDOM */
+
 var div = React.DOM.div
 var h1 = React.DOM.h1
 
 var MyTitle = React.createClass({
-  //enhanced object literal syntax
+  // enhanced object literal syntax
   render () {
     return (
       div(null,
