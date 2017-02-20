@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
 		"test": "standard",
-		"build": "webpack"
+		"build": "webpack",
+		"watch": "webpack --watch"
   },
   "dependencies": {
     "axios": "0.15.2",
