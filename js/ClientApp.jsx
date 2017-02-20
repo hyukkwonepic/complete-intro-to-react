@@ -2,7 +2,7 @@ var React = require('react')
 var ReactDOM = require('react-dom')
 var MyTitle = require('./MyTitle')
 
-var MyFirstComponent = function () {
+var MyFirstComponent = () => {
   return (
     <div>
       <MyTitle title="whatevs" color="rebeccapurple" />
