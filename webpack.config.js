@@ -31,6 +31,10 @@ module.exports = {
           {
             presets: ['react']
           }
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
       }
     ]
   }
