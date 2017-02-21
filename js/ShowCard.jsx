@@ -12,10 +12,10 @@ const ShowCard = (props) => (
 )
 
 ShowCard.propTypes = {
-  poster: React.PropTypes.isRequired,
-  title: React.PropTypes.isRequired,
-  year: React.PropTypes.isRequired,
-  description: React.PropTypes.isRequired
+  poster: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
+  year: React.PropTypes.string.isRequired,
+  description: React.PropTypes.string.isRequired
 }
 
 module.exports = ShowCard
