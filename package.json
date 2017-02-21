@@ -1,5 +1,5 @@
 {
-	"name": "complete-intro-to-react",
+  "name": "complete-intro-to-react",
   "version": "1.0.0",
   "description": "A two day workshop on a complete intro to React",
   "main": "index.js",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
+    "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.5.0",
     "babel-preset-react": "^6.5.0",
     "babel-register": "^6.5.2",
