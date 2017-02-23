@@ -9,7 +9,7 @@ const { shows } = require('../public/data')
 
 const App = React.createClass({
   assignShow (nextState, replace) {
-    const showArray = shows.filter((show) => show.imdbId === nextState.id)
+    const showArray = shows.filter((show) => show.imdbID === nextState.params.id)
 
     if (showArray.length < 1) {
       return replace('/')
