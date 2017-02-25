@@ -2,7 +2,24 @@ const React = require('react')
 const { Link } = require('react-router')
 
 const Header = React.createClass({
+  propTypes: {
+    handleSearchTerm: React.PropTypes.func,
+    showSearch: React.PropTypes.bool,
+    searchTerm: React.PropTypes.string
+  },
   render () {
+    let utilSpace
+    if (this.props.showSearch) {
+      utilSpace = <input type='text' className='search-input' placeholder='search' value={this.props.searchTerm} onChange={this.props.handleSearchTerm} />
+    } else {
+      utilSpace = (
+        <h2 className='header-back'>
+          <Link to='/search'>
+            Back
+          </Link>
+        </h2>
+      )
+    }
     return (
       <header className='header'>
         <h1 className='brand'>
@@ -10,11 +27,7 @@ const Header = React.createClass({
             svideo
           </Link>
         </h1>
-        <h2 className='header-back'>
-          <Link to='/search'>
-            Back
-          </Link>
-        </h2>
+        {utilSpace}
       </header>
     )
   }
